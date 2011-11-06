@@ -2,7 +2,7 @@
 #include <avr/interrupt.h>
 #include "soundino.h"
 
-/* Math 2 */
+/* Math */
 const float Pi = 3.14159;
 
 /* PINs */

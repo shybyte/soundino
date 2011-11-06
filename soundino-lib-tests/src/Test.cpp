@@ -9,7 +9,7 @@ void thisIsATest() {
 
 void runSuite(){
 	cute::suite s;
-	//TODO add your test here yeahh
+	//TODO add your test here
 	s.push_back(CUTE(thisIsATest));
 	cute::ide_listener lis;
 	cute::makeRunner(lis)(s, "The Suite");
