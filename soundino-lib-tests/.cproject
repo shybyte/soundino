@@ -35,9 +35,9 @@
 								<option id="gnu.cpp.compiler.option.optimization.level.2026182964" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.624804267" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.2039509175" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1075675125" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -66,9 +66,9 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.1333689138" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1672919323" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
 								<option id="gnu.both.asm.option.include.paths.617559936" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.813268940" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -124,9 +124,9 @@
 								<option id="gnu.cpp.compiler.option.optimization.level.2116494536" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.179780178" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.385130046" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.306520571" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -154,9 +154,9 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.53919672" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1426815313" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
 								<option id="gnu.both.asm.option.include.paths.11465372" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.247847308" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -199,4 +199,5 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
