@@ -22,7 +22,8 @@ const uint16_t freqTable[] = { 33, 35, 37, 39, 41, 44, 46, 49, 52, 55, 58, 62,
 
 uint16_t sinTable[256];
 
-const uint16_t scale[] = { 0, 2, 3, 5, 7, 8, 11, 12, 14, 15, 17 };
+const uint16_t scale[] = { 0, 1, 3, 5, 7, 8, 10, 12, 13, 15, 17 };
+const uint16_t scaleL[] = { 5, 8, 3, 0, 1};
 //const uint16_t scale[] = { 0, 2, 3, 5, 7, 8, 11, 12, 14, 15, 17 };
 
 int distance;
@@ -86,8 +87,8 @@ void setup() {
 }
 
 void playNote(int note, int time, int channel) {
-	Serial.print("Note ");
-	Serial.println(note);
+	//Serial.print("Note ");
+	//Serial.println(note);
 	if (note >= 0) {
 		int freq = freqTable[note + 21];
 		speed[channel] = freq + freq / 21;
@@ -105,25 +106,31 @@ void playPattern(int baseNote, int channel) {
 	 */
 }
 
-int readNote(int pin) {
+int readNote(int pin, int noteNumber) {
 	int sensorValue = analogRead(pin);
 	if (sensorValue < 100) {
 		return -1;
 	}
 	float volts = sensorValue * 0.0048828125;
 	float distance = 27 / volts;
-	int baseNote = scale[map(constrain((int)distance,10,40), 10, 40, 0, 7)];
+	int baseNote = 0;
+	if (pin==4) {
+		baseNote = scaleL[map(constrain((int)distance,8,40), 8, 40, 0, 5)];
+		Serial.println(baseNote);
+	} else {
+		baseNote = scale[map(constrain((int)distance,8,40), 8, 40, 0, 7)];
+	}
 	return baseNote;
 }
 
 void loop() {
 	int i;
-	int noteL = readNote(4);
-	int patternSpeed = 50;
+	int noteL = readNote(4,4);
+	int patternSpeed = 60;
 
 	playNote(noteL, 10, 0);
 	for (i = 0; i < 4; i++) {
-		playNote(readNote(5), 10, 1);
+		playNote(readNote(5,7), 10, 1);
 		delay(patternSpeed);
 	}
 
@@ -131,7 +138,7 @@ void loop() {
 		playNote(noteL + 12, 10, 0);
 	}
 	for (i = 0; i < 4; i++) {
-		playNote(readNote(5), 10, 1);
+		playNote(readNote(5,7), 10, 1);
 		delay(patternSpeed);
 	}
 }
