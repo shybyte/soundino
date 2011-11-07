@@ -25,7 +25,6 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1778695746" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1434343799" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1421467885" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
 								</option>
@@ -35,7 +34,6 @@
 								<option id="gnu.cpp.compiler.option.optimization.level.2026182964" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.624804267" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.2039509175" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
 								</option>
@@ -52,12 +50,9 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.466453238" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.paths.1288427593" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib/avr}&quot;"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.149672436" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="soundino-lib"/>
-								</option>
+								<option id="gnu.cpp.link.option.libs.149672436" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1588699338" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -66,7 +61,6 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.1333689138" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1672919323" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
 								<option id="gnu.both.asm.option.include.paths.617559936" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
 								</option>
@@ -83,13 +77,7 @@
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
-				<externalSettings containerId="soundino-lib;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/soundino-lib"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/soundino-lib/Debug"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="soundino-lib"/>
-					</externalSetting>
-				</externalSettings>
+				<externalSettings containerId="soundino-lib;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
 			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="cdt.managedbuild.config.gnu.cross.exe.release.316301108">
@@ -114,7 +102,6 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1176102629" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.940231712" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1879650628" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
 								</option>
@@ -124,7 +111,6 @@
 								<option id="gnu.cpp.compiler.option.optimization.level.2116494536" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.179780178" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.385130046" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
 								</option>
@@ -140,12 +126,9 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1385053557" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.paths.692128536" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib/Release}&quot;"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.1142030978" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="soundino-lib"/>
-								</option>
+								<option id="gnu.cpp.link.option.libs.1142030978" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1532393884" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -154,7 +137,6 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.53919672" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1426815313" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
 								<option id="gnu.both.asm.option.include.paths.11465372" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/cute}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib-tests/boost}&quot;"/>
 								</option>
@@ -171,13 +153,7 @@
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
-				<externalSettings containerId="soundino-lib;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/soundino-lib"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/soundino-lib/Debug"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="soundino-lib"/>
-					</externalSetting>
-				</externalSettings>
+				<externalSettings containerId="soundino-lib;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
 			</storageModule>
 		</cconfiguration>
 	</storageModule>

@@ -51,7 +51,7 @@
 								<inputType id="de.innot.avreclipse.cppcompiler.input.2100064562" superClass="de.innot.avreclipse.cppcompiler.input"/>
 							</tool>
 							<tool id="de.innot.avreclipse.tool.linker.winavr.app.debug.1424305204" name="AVR C Linker" superClass="de.innot.avreclipse.tool.linker.winavr.app.debug"/>
-							<tool command="avr-gcc" commandLinePattern="${COMMAND} --cref -s -Os ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} -lm ${FLAGS}" errorParsers="" id="de.innot.avreclipse.tool.cpplinker.app.debug.1432669158" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.app.debug">
+							<tool command="avr-gcc" commandLinePattern="${COMMAND} --cref -s -Os ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} -lm ${FLAGS} " errorParsers="" id="de.innot.avreclipse.tool.cpplinker.app.debug.1432669158" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.app.debug">
 								<option id="de.innot.avreclipse.cpplinker.option.libpath.2028717294" name="Libraries Path (-L)" superClass="de.innot.avreclipse.cpplinker.option.libpath" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/soundino-lib/avr}&quot;"/>

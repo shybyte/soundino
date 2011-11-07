@@ -41,13 +41,15 @@ SIGNAL(TIMER1_OVF_vect) {
 	sample = (sample1 + sample2) >> 1;
 }
 
+void prinVersion() {
+	Serial.print("Soundino Version ");
+	int version = getSoundinoVersion();
+	Serial.println(version);
+}
+
 void setup() {
 	Serial.begin(9600);
-	Serial.println("Sound!");
-	int five = getFive();
-	Serial.print("Five::");
-	Serial.println(five);
-
+	prinVersion();
 	initSinTable(sinTable);
 
 	pinMode(AUDIO, OUTPUT);

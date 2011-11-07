@@ -4,33 +4,32 @@
 #include "cute_runner.h"
 #include "soundino.h"
 
-void testSinTable(){
-	uint16_t sinTable[256];
-	initSinTable(sinTable);
-	for(int i=0;i<256;i++) {
+void print(uint16_t *sinTable, int size) {
+	for (int i = 0; i < size; i++) {
 		std::cout << sinTable[i] << "\n";
 	}
 }
 
-
-
-void thisIsATest() {
-	ASSERT_EQUAL(1,getFive());
+void testSinTable() {
+	uint16_t sinTable[256];
+	initSinTable(sinTable);
+	//	print(sinTable,256);
 }
 
-void runSuite(){
+void testGetSoundinoVersion() {
+	ASSERT(getSoundinoVersion()>0);
+}
+
+void runSuite() {
 	cute::suite s;
-	//TODO add your test here yeahhh hossa
-	s.push_back(CUTE(thisIsATest));
+	s.push_back(CUTE(testGetSoundinoVersion));
 	s.push_back(CUTE(testSinTable));
 	cute::ide_listener lis;
-	cute::makeRunner(lis)(s, "The Suite");
+	cute::makeRunner(lis)(s, "The Soundino Suite");
 }
 
-int main(){
-    runSuite();
-    return 0;
+int main() {
+	runSuite();
+	return 0;
 }
-
-
 

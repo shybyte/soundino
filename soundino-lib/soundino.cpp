@@ -6,8 +6,8 @@
 
 const float PI = 3.1415926535897932384626433832795;
 
-int getFive() {
-	return 23;
+int getSoundinoVersion() {
+	return 1;
 }
 
 void initSinTable(uint16_t *sinTable) {
